@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #252525;
+}
+#lg-navigation {
+  position: fixed;
+  padding: 10px 100px;
+}
+#lg-navigation a {
+  font: 'Oswald';
+  color: #46a6e9;
+  text-decoration: none;
+    text-shadow: 0 0 8px #46a6e9;
+  font-weight: bold;
+}
+.sticky-lg {
+  position: sticky;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: 1s ease;
+  z-index: 200;
+}
+#text-wrap {
+  color: white;
+}
+h1 {
+  font-size: 35px;
+}
+h1 span {
+  font-weight: 700;
+  color: #46a6e9;
+}
+@keyframes btn-animation {
+  0% {
+    transform: translateY(0%);
+  }
+  30% {
+    transform: translateY(30%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateY(40%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+#animated-arrow {
+  font-size: 40px;
+  height: 10%;
+}
+#btn-animated {
+  animation: btn-animation 1s infinite;
+}
+
+/*SMALL NAV*/
+#nav-small {
+  height: 60px;
+  font-size: 40px;
+  background-color: #46a6e9;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  transition: 0.5s ease;
+}
+.nav-elements {
+  display: none;
+  height: 30vh;
+  width: 40vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.nav-elements a {
+  text-decoration: none;
+  color: white;
+  padding-top: 10px;
+  font-size: 24px;
+}
+
+#show-hide {
+  background-color: transparent;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.show-nav {
+  display: flex;
+  flex-direction: column;
+  animation: navigation 0.5s ease;
+}
+
+@keyframes navigation {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* ABOUT */
+.nenad-img {
+  height: 250px;
+  height: 250px;
+}
+#about-me-container {
+  color: white;
+}
+.text-muted {
+  color: #6c757d !important;
+}
+
+.heading {
+  color: #46a6e9;
+}
+#about button {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: none;
+  margin: 5px;
+  font-size: 24px;
+}
+#about-me {
+  color: #46a6e9;
+  border-bottom: 1px solid #46a6e9;
+  font-weight: bold;
+}
+#skills {
+  color: white;
+  border-bottom: none;
+  font-weight: normal;
+}
+/*SKILLS*/
+#skills-container {
+  border-left: 1px solid rgba(70, 166, 233, 0.5);
+}
+.img-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  align-self: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 160px;
+  height: 160px;
+  margin: 5px;
+}
+.img-box img {
+  width: 50px;
+  height: 50px;
+}
+#contact {
+  width: 100%;
+  height: 100%;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px 'Oswald', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+
+
+/*PROJECTS*/
+
+.carousel-text {
+  background-color: #868686;
+  padding: 1rem;
+  border-radius: 0 0 10px 10px;
+  color: #000;
+  min-height: 140px;
+}
+.carousel-img {
+  max-height: 400px; /* ili 400px ako želiš još kompaktnije */
+  width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+  top: 200px;
+  transform: translateY(-50%);
+  position: absolute;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;                  /* krug */
+  padding: 15px;
+    width: 3rem;
+  height: 3rem;
+}
+.carousel-inner {
+ 
+  position: relative;
+}
+
+/*CONTACT*/
+
+#contact {
+  background: radial-gradient(ellipse at center, #0a0a0a, #1a1a1a);
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Orbitron', sans-serif; /* Futuristički font */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.contact-futuristic {
+  display: inline-block;
+  padding: 3rem 4rem;
+  border: 2px solid #46a6e9;
+  border-radius: 20px;
+  color: #fff;
+  background: rgba(30, 30, 30, 0.5);
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 0 15px #46a6e9,
+    0 0 30px #46a6e9 inset;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s;
+}
+
+.contact-futuristic:hover {
+  transform: scale(1.08);
+  box-shadow:
+    0 0 25px #00ffff,
+    0 0 50px #00ffff inset;
+  border-color: #00ffff;
+}
+
+.contact-futuristic i {
+  font-size: 4rem;
+  color: #00ffff;
+  margin-bottom: 2rem;
+}
+
+.contact-futuristic h4 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.contact-futuristic p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+.contact-futuristic i {
+  animation: pulse 2s infinite;
+}
