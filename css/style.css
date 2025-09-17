@@ -20,7 +20,7 @@ body {
 }
 .sticky-lg {
   position: sticky;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   transition: 1s ease;
   z-index: 200;
 }
@@ -72,7 +72,7 @@ h1 span {
 }
 .nav-elements {
   display: none;
-  height: 30vh;
+  height: 20vh;
   width: 40vw;
   background-color: rgba(0, 0, 0, 0.5);
   position: relative;
